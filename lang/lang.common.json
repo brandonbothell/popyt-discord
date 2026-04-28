@@ -1,0 +1,38 @@
+{
+  "bot": {
+    "name": "Popyt",
+    "author": "Brandon Bothell"
+  },
+  "emojis": {
+    "yes": "✅",
+    "no": "❌",
+    "enabled": "🟢",
+    "disabled": "🔴",
+    "info": "ℹ️",
+    "warning": "⚠️",
+    "previous": "◀️",
+    "next": "▶️",
+    "first": "⏪",
+    "last": "⏩",
+    "refresh": "🔄"
+  },
+  "colors": {
+    "default": "#0099ff",
+    "success": "#00ff83",
+    "warning": "#ffcc66",
+    "error": "#ff4a4a"
+  },
+  "links": {
+    "author": "https://brandonsbench.net/",
+    "docs": "https://popyt.brandonsbench.net/docs/api",
+    "popyt": "https://popyt.brandonsbench.net",
+    "donate": "https://github.com/sponsors/brandonbothell",
+    "invite": "https://discord.com/oauth2/authorize?client_id=1498553358372569190",
+    "source": "https://github.com/brandonbothell/popyt-discord",
+    "stream": "https://www.youtube.com/@onedutta",
+    "support": "https://discord.gg/U8yFNYE",
+    "template": "https://github.com/KevinNovak/Discord-Bot-TypeScript-Template",
+    "terms": "https://github.com/brandonbothell/popyt-discord/blob/master/LEGAL.md#terms-of-service",
+    "vote": "https://top.gg/"
+  }
+}
