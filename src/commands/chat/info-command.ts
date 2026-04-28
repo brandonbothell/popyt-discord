@@ -15,30 +15,31 @@ export class InfoCommand implements Command {
     public async execute(intr: ChatInputCommandInteraction, data: EventData): Promise<void> {
         let args = {
             option: intr.options.getString(
-                Lang.getRef('arguments.option', Language.Default)
+                Lang.getRef('arguments.option', Language.Default), false
             ) as InfoOption,
         };
 
         let embed: EmbedBuilder;
+        const buildEmbed = (): void => {
+            for (let langCode of Language.Enabled) {
+              embed.addFields([
+                  {
+                      name: Language.Data[langCode].nativeName,
+                      value: Lang.getRef('meta.translators', langCode),
+                  },
+              ]);
+          }
+        }
         switch (args.option) {
-            case InfoOption.ABOUT: {
-                embed = Lang.getEmbed('displayEmbeds.about', data.lang);
-                break;
-            }
             case InfoOption.TRANSLATE: {
                 embed = Lang.getEmbed('displayEmbeds.translate', data.lang);
-                for (let langCode of Language.Enabled) {
-                    embed.addFields([
-                        {
-                            name: Language.Data[langCode].nativeName,
-                            value: Lang.getRef('meta.translators', langCode),
-                        },
-                    ]);
-                }
-                break;
+                buildEmbed()
+                break
             }
+            case InfoOption.ABOUT:
             default: {
-                return;
+                embed = Lang.getEmbed('displayEmbeds.about', data.lang)
+                buildEmbed()
             }
         }
 

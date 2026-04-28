@@ -22,6 +22,7 @@ var customConfig = defineConfig([
       unicorn: eslintPluginUnicorn,
     },
     rules: {
+      'no-fallthrough': 'off',
       '@typescript-eslint/explicit-function-return-type': [
         'error',
         {
