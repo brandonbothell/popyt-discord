@@ -1,6 +1,6 @@
 {
   "name": "discord-popyt",
-  "packageManager": "yarn@4.14.1",
+  "packageManager": "yarn@4.18.0",
   "version": "1.0.0",
   "author": "Brandon Bothell",
   "description": " An example of using Popyt (the amazing YouTube Data API library for Node.JS) with a Discord bot.",
