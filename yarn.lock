@@ -1843,7 +1843,7 @@ __metadata:
     pm2: "npm:6.0.14"
     prettier: "npm:3.8.3"
     reflect-metadata: "npm:0.2.2"
-    remove-markdown: "npm:0.6.3"
+    remove-markdown: "npm:0.7.0"
     typescript: "npm:6.0.3"
     typescript-eslint: "npm:8.59.1"
     vitest: "npm:4.1.5"
@@ -4496,10 +4496,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"remove-markdown@npm:0.6.3":
-  version: 0.6.3
-  resolution: "remove-markdown@npm:0.6.3"
-  checksum: 10c0/43203724cc9bba4960e0b7f5f99d266a9729dcd8a6bb915ca45ed4aaaf2402a52c6e03345463502cbd97a1d7121505c13026901672f9c1d3730b8266ccfc7fc0
+"remove-markdown@npm:0.7.0":
+  version: 0.7.0
+  resolution: "remove-markdown@npm:0.7.0"
+  checksum: 10c0/5ac218f00a58cca0156ec15e284a593aaf781eefacbc34a592c6be4df309819dc7af92b0664dcb03547f471caab8419eea356636b9cae968e58cc0865b89711e
   languageName: node
   linkType: hard
 
